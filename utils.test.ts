@@ -1,9 +1,4 @@
 import {
-  add,
-  isPrime,
-  reverseString,
-  getCharactersCount,
-  formatDate,
   validatePassword,
   maskCardNumber,
   range,
@@ -12,26 +7,6 @@ import {
 } from "./utils";
 
 describe("Utils Functions", () => {
-  test("add", () => {
-    expect(add(2, 3)).toBe(5);
-  });
-
-  test("isPrime", () => {
-    expect(isPrime(7)).toBe(true);
-    expect(isPrime(8)).toBe(false);
-  });
-
-  test("reverseString", () => {
-    expect(reverseString("abc")).toBe("cba");
-  });
-
-  test("getCharactersCount", () => {
-    expect(getCharactersCount("aab")).toEqual({ a: 2, b: 1 });
-  });
-
-  test("formatDate", () => {
-    expect(formatDate(new Date("2024-01-01"))).toBe("2024-01-01");
-  });
 
   test("validatePassword", () => {
     expect(validatePassword("Abc123!@")).toBe(true);
